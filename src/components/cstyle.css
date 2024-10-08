@@ -1,0 +1,105 @@
+/* Contact page styles */
+.contact-page {
+    font-family: "Lato", sans-serif;
+    background-color: #121212;
+    background-image: url('https://st4.depositphotos.com/1885147/41184/i/450/depositphotos_411840890-stock-photo-abstract-architectural-wallpaper-design-digital.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.w3-bar-item {
+    text-decoration: none;
+    color: #fff;
+}
+
+.w3-bar-item:hover {
+    color: #7ec4cf;
+    background-color: transparent;
+    border-bottom: 2px solid #7ec4cf;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact-section {
+    background: rgba(34, 34, 34, 0.9);
+    padding: 64px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 64px auto;
+    max-width: 800px;
+    color: #ddd;
+}
+
+.contact-map {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    margin-top: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 32px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+input,
+textarea {
+    background-color: #2b2b2b;
+    color: #ddd;
+    border: 1px solid #444;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #7ec4cf;
+    outline: none;
+}
+
+button {
+    background-color: #7ec4cf;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #68b0bb;
+    color: #000;
+}

@@ -1,0 +1,93 @@
+/* General body styles */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #fff; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the full height */
+  }
+  
+  /* Services page styles */
+  .services-page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow this section to grow to fill space */
+    padding-top: 64px; /* Space for fixed navbar */
+    background-image: url('https://images.adsttc.com/media/images/5720/7fb4/e58e/cefc/6400/0060/original/MNS_Diagram_Program.gif?1461747633'); /* Background for services */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: calc(100vh - 64px); /* Ensure full height minus navbar */
+  }
+  
+  /* Adjustments to spacing */
+  .servicesw3-container.w3-content {
+    max-width: 1200px;
+    margin: auto; /* Center the container */
+    position: relative;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding to reduce space between navbar and title */
+  }
+  
+  /* Services container */
+  .services-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 32px 0;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  
+  .service-box {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 8px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.1) translateY(-20px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .service-box img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .service-box h3 {
+    margin-top: 10px;
+  }
+  
+  .service-box p {
+    margin: 10px 0;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .scroll-left-btn {
+    left: 10px;
+  }
+  
+  .scroll-right-btn {
+    right: 10px;
+  }

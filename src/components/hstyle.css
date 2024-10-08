@@ -1,0 +1,151 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Home styles */
+
+/* Keyframes for fade-in-down animation */
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for fade-in-up animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Scroll behavior for fade-up effect */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* When the section is in view, apply this style */
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Header image container */
+  .header-image {
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.3s;
+  }
+  
+  /* Header title text */
+  .header-image h1 {
+    font-family: 'Optima';
+    margin: 0;
+    font-size: 6em; /* Default size */
+    opacity: 1;
+    animation: fadeInDown 2s 0s; /* Fade-in effect */
+    transition: font-size 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Header when scrolled */
+  .header-image.scrolled h1 {
+    font-size: 4.5em; /* Adjusted size for the scroll effect */
+    opacity: 0.8; /* Slightly fade out */
+  }
+  
+  /* Welcome section container */
+  .w3-container.w3-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Section title styling */
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Dancing Script', cursive;
+    animation: fadeInUp 1.5s;
+  }
+  
+  /* Section content paragraph */
+  .section-content {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+  
+  /* Image styling for both sections */
+  .w3-container img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover effect on image */
+  .w3-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 32px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Adjustments specific for "Why Choose Us" Section */
+  .w3-container.fade-up h2.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .w3-container.fade-up p.section-content {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .w3-container.fade-up img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .w3-container.fade-up img:hover {
+    transform: scale(1.05);
+  }

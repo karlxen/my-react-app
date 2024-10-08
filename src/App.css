@@ -1,0 +1,160 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+.w3-bar-item {
+  text-decoration: none;
+  color: #fff;
+}
+
+.w3-bar-item:hover {
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+}
+
+.w3-dropdown-hover {
+  position: relative;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.w3-dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.w3-dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.w3-dropdown-hover:hover .w3-dropdown-content {
+  display: block;
+}
+
+.header-image {
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7e410935958631.57b97ba56e68b.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  color: #FFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: height 0.3s, background-color 0.3s;
+}
+
+.header-image.scrolled {
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header-image h1 {
+  font-family: "Optima";
+  font-size: 6em;
+  margin: 0;
+  animation: fadeInDown 2s;
+  transition: font-size 0.3s;
+}
+
+.header-image.scrolled h1 {
+  font-size: 4em;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.w3-container {
+  padding: 64px 16px;
+}
+
+.w3-container img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.w3-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.5s;
+  font-family: 'Dancing Script', cursive;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-content {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 32px 0;
+}
+
+.footer a {
+  color: #333;
+}
+
+.footer a:hover {
+  color: #007BFF;
+}
+
+.icon-bar {
+  margin: 20px 0;
+}
+
+.icon-bar i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icon-bar i:hover {
+  transform: scale(1.2);
+}
