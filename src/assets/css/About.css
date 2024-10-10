@@ -1,0 +1,44 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.about-page {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/332/325/183/city-night-dark-skyline-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container styles */
+.about-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 100px auto;
+  width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Team member styles */
+.team-member {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}

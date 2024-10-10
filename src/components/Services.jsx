@@ -1,6 +1,5 @@
-import React from 'react';
 import Navbar from './Navbar'; // Assuming you have a Navbar component
-import './sstyle.css'; // Importing the external stylesheet
+import '../assets/css/Service.css'; // Importing the external stylesheet
 
 const Services = () => {
   const scrollServices = (direction) => {
@@ -91,10 +90,6 @@ const Services = () => {
           &#10095;
         </button>
       </div>
-
-      <footer className="footer">
-        <p>© 2024 Atelier In. All rights reserved.</p>
-      </footer>
     </div>
   );
 };

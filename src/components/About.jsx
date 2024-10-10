@@ -1,6 +1,5 @@
-import React from 'react';
 import Navbar from './Navbar'; // Adjust the import path as necessary
-import './astyle.css'; // Ensure to import your CSS here
+import '../assets/css/About.css'; // Ensure to import your CSS here
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
         <p className="w3-justify">
           At Atelier In, we are passionate about architecture and design. With a team of experienced architects and designers, we strive to create innovative and sustainable spaces that inspire and engage. Our commitment to excellence and attention to detail sets us apart in the industry, ensuring that every project we undertake is a testament to our dedication to quality and creativity.
           <br /><br />
-          Whether you're looking to design a new home, renovate an existing space, or undertake a large-scale commercial project, our team is here to guide you through every step of the process. Explore our portfolio to see examples of our work and get in touch with us to discuss how we can bring your vision to life.
+          Whether you&apos;re looking to design a new home, renovate an existing space, or undertake a large-scale commercial project, our team is here to guide you through every step of the process. Explore our portfolio to see examples of our work and get in touch with us to discuss how we can bring your vision to life.
         </p>
       </div>
 

@@ -1,0 +1,66 @@
+.navbar {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.navbar-visible {
+  top: 0;
+}
+
+.navbar-hidden {
+  top: -70px;
+}
+
+/* Link styling for navigation items */
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: border-bottom 0.3s ease;
+  font-size: 20px;
+}
+
+/* Styling for login/register links */
+.auth-links {
+  display: flex;
+  margin-left: auto;
+  /* Pushes Login/Register to the right */
+}
+
+/* Menu toggle button for mobile view */
+.menu-toggle {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: block;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Mobile navigation item styles */
+.mobile-nav-item {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid gray;
+}

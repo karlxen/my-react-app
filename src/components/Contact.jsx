@@ -1,6 +1,5 @@
-import React from 'react';
 import Navbar from './Navbar'; // Adjust the import path as necessary
-import './cstyle.css';
+import '../assets/css/Contact.css';
 
 const Contact = () => {
     return (
@@ -35,11 +34,7 @@ const Contact = () => {
                         allowFullScreen="" loading="lazy"></iframe>
                 </div>
             </div>
-
-            <footer className="footer">
-                <p>© 2024 Atelier In. All rights reserved.</p>
-            </footer>
-            </div>
+        </div>
     );
 };
 

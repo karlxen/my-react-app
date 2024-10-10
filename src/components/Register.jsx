@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navbar from './Navbar';
-import './rstyle.css'; // Make sure this imports your CSS file
+import '../assets/css/Register.css'; // Make sure this imports your CSS file
 
 const Register = () => {
     const [username, setUsername] = useState('');

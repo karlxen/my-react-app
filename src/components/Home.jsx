@@ -1,6 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Navbar from './Navbar'; // Importing the Navbar component
-import './hstyle.css'; // Importing the external stylesheet
+import '../assets/css/Home.css'; // Importing the external stylesheet
+import Footer from './Footer';
 
 function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +43,7 @@ function Home() {
   }, []);
 
   return (
-    <div style={{ scrollBehavior: 'smooth' }}> {/* Smooth scroll behavior */}
+    <div className='home-container' style={{ scrollBehavior: 'smooth' }}> {/* Smooth scroll behavior */}
       {/* Import Navbar */}
       <Navbar />
 
@@ -84,9 +85,7 @@ function Home() {
       </div>
 
       {/* Footer Section */}
-      <footer className="footer">
-        <p>© 2024 Atelier In. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './nstyle.css'; // Importing external stylesheet
+import '../assets/css/Navbar.css'; // Importing external stylesheet
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -59,11 +59,6 @@ function Navbar() {
           REGISTER
         </Link>
       </div>
-
-      {/* Mobile menu toggle */}
-      <button className="menu-toggle" onClick={toggleMenu}>
-        <i className="fa fa-bars"></i>
-      </button>
 
       {/* Mobile menu */}
       {isMenuOpen && (

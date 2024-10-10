@@ -13,35 +13,36 @@
     min-height: 100vh;
 }
 
-.form-container {
+.loginbody .form-container {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    width: 40rem;
     margin: 50px auto;
     color: #333;
 }
 
-h1 {
+.loginbody h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-label {
+.loginbody label {
     margin-top: 10px;
     display: block;
 }
 
-input {
+.loginbody input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: white;
 }
 
-button {
+.loginbody button {
     width: 100%;
     padding: 10px;
     background-color: #7ec4cf;
@@ -50,13 +51,14 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 1rem 0;
 }
 
-button:hover {
+.loginbody button:hover {
     background-color: #68b0bb;
 }
 
-.output {
+.loginbody .output {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
